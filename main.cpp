@@ -13,4 +13,16 @@ int main() {
     cout << "data = " << data << endl;
     chang(data);
     cout << "data = " << data << endl;
+
+    // 对指针的引用
+    int *p = &data;
+    int *&pref = p;
+    cout << "p = " << p << endl;
+    cout << "pref = " << pref << endl;
+
+    // 对数组的引用
+    int arr[] = {1, 2, 3};
+    int (&refarr)[3] = arr;
+    cout << "arr = " << arr << endl;
+    cout << "refarr = " << refarr << endl;
 }
